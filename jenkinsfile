@@ -1,10 +1,10 @@
 pipeline{
-agent any;
-  stages{
+   agent any;
+      stages{
       stage('git'){
          steps{
           git 'https://github.com/rajujaat25/check.git'
           }
          }
-      }
+       }
  }
