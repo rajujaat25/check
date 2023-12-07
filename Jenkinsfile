@@ -14,7 +14,7 @@ pipeline{
             failure{
             sh "date"
             }
-            alwaya{
+            always{
             sh "ifconfig"
             }
          }
