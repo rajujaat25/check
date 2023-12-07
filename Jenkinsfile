@@ -6,7 +6,8 @@ pipeline{
           git 'https://github.com/rajujaat25/check.git'
           }
          }
-         post{
+      }
+         post {
          success{
             sh "tar -cvf file.tar /var/lib/jenkins/workspace/github_pipeline"
          }
@@ -18,5 +19,5 @@ pipeline{
             }
          }
          
-       }
+      
  }
