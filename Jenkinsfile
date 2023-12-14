@@ -2,7 +2,7 @@
  agent any;
     stages{
     stage('git'){
-    steps
+    steps{
        git 'https://github.com/rajujaat25/check.git'
     }
     }
