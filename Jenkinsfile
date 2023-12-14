@@ -8,7 +8,7 @@
     }
     post{
        success{
-       sh "tar -cvf /var/lib/jenkins/workspace/pip
+       sh "tar -cvf /var/lib/jenkins/workspace/pip"
        }
        failure{
        sh "ifconfig"
