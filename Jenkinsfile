@@ -6,6 +6,7 @@
        git 'https://github.com/rajujaat25/check.git'
     }
     }
+    }
     post{
        success{
        sh "tar -cvf /var/lib/jenkins/workspace/pip"
@@ -19,6 +20,6 @@
        
     }
     
-    }
+    
     
  }
