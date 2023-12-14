@@ -4,8 +4,20 @@
     stage('git'){
     steps{
        git 'https://github.com/rajujaat25/check.git'
+     stash include "*" name: "frist"
+      sh "ls"
     }
     }
+     stage('stash'){
+     steps{
+     unstash "frist"
+      sh "ls"
+     }
+     
+     }
+     
+    
+     
     }
     post{
        success{
