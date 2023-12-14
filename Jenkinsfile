@@ -4,7 +4,7 @@
     stage('git'){
      steps{
        git 'https://github.com/rajujaat25/check.git'
-     stash includes: "*" name: "frist"
+     stash includes: "*",name: "frist"
       sh "ls"
      }
     }
